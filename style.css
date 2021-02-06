@@ -1,0 +1,114 @@
+.wrapper
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+   position: relative;
+   align-items: center;
+   justify-content: center;
+   perspective: 900px;
+}
+
+.page.active
+{
+    background-color: rgb(42, 40, 49);
+    box-shadow: 2px 5px;
+    
+    
+}
+
+.page.test
+{
+    
+    transform: rotateY(-35deg);
+}
+
+.page.xs
+{
+    margin-right: -50px;
+  
+    transform: rotateY( 
+-35deg
+ );
+    
+    z-index: 20;
+}
+
+.page:hover 
+{
+    transform: scale(1.25);
+   transition: transform  1s ease-in-out ;
+   z-index: 90;
+   position: relative;
+}
+.page:hover h2
+{
+    transform: scale(0);
+   transition: transform  1s ease-in-out ;
+   z-index: 90;
+   position: relative;
+}
+
+
+
+.title
+{
+    color: white;
+}
+
+.page.active
+{
+    
+    height: 50%;
+    width: 30%;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 5px 5px red;
+}
+
+#avatar
+{
+    border-radius: 50%;
+    height: 30%;
+    width: 30%;
+    object-fit: cover;
+    border: 8px solid black;
+    box-shadow: 5px 5px red;
+}
+
+.page 
+{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    cursor: url('cursor.cur'), auto;
+
+
+
+   
+}
+
+.center
+{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+}
+
+#pres 
+{
+    z-index: 2;
+    flex-direction: column;
+    align-items: center;
+    transform: rotate(12deg);
+}
+
+body{
+    background-color: rgb(35, 35, 73);
+    font-family: 'Pangolin', cursive;
+  
+
+}
+
